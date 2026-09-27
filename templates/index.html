@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drezza — Style Decoded | Your AI Fashion Stylist</title>
+  <link rel="icon" type="image/png" href="/static/images/drezza_logo.png">
+  
+  <!-- High Fashion Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            drezza: {
+              linen: '#E3DDD1',     // Exact official logo background
+              cream: '#FAF8F5',     // Editorial soft ivory background
+              warm: '#F3EFEA',      // Warm neutral surface
+              surface: '#FFFFFF',   // Clean card white
+              border: '#E2DBD0',    // Delicate luxury border
+              borderDark: '#CDC4B5',
+              dark: '#141312',      // Deep charcoal black
+              charcoal: '#282624',
+              muted: '#706C66',     // Sophisticated subdued text
+              accent: '#B89252',    // Subtle antique gold
+              accentLight: '#F7F3EB'
+            }
+          },
+          boxShadow: {
+            'luxury': '0 4px 20px -2px rgba(20, 19, 18, 0.05)',
+            'luxury-hover': '0 12px 30px -4px rgba(20, 19, 18, 0.08)',
+            'modal': '0 25px 50px -12px rgba(20, 19, 18, 0.25)',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- React 18 & ReactDOM CDN -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <!-- Babel Standalone for JSX compilation in browser -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="bg-drezza-cream text-drezza-dark min-h-screen antialiased selection:bg-drezza-dark selection:text-white">
+  <div id="root"></div>
+
+  <!-- React Single Page Application -->
+  <script type="text/babel" src="/static/js/app.js"></script>
+</body>
+</html>
