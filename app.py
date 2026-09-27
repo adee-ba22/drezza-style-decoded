@@ -615,6 +615,10 @@ def logout():
     session.clear()
     return jsonify({'success': True, 'message': 'Logged out.'})
 
+# Initialize database and seed demo data
+init_db()
+seed()
+
 if __name__ == '__main__':
     port = int(os.environ.get('PORT', 5000))
     print(f"Starting Drezza — Style Decoded server on port {port}...")
